@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Client registration form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 id="title">Client registration form Christmas party 🎉</h1>
+        <p id="description">Thank you for taking the time to register.</p>
+      </div>
+      <form id="survey-form" value="survey-form">
+        <fieldset>
+          <div class="fieldset">
+            <label id="name"
+              >Name:<input
+                id="name-label"
+                type="text"
+                required
+                placeholder="name"
+                name="name"
+            /></label>
+            <label id="surname"
+              >Surname:<input
+                id="surname"
+                type="text"
+                name="surname"
+                required
+                placeholder="surname"
+            /></label>
+            <label id="email-label"
+              >Email:<input
+                id="email"
+                type="email"
+                name="email"
+                required
+                placeholder="email"
+            /></label>
+            <label id="number-label"
+              >Input your age (years) :<input
+                id="number"
+                type="number"
+                name="age"
+                required
+                min="18"
+                max="100"
+                placeholder="age"
+            /></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Gender:</legend>
+          <label
+            ><input
+              type="radio"
+              name="Gender"
+              value="male"
+              class="inline"
+              checked
+            />Male</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="Gender"
+              value="female"
+              class="inline"
+            />Female</label
+          >
+        </fieldset>
+        <fieldset>
+          <label for="dropdown" value="dropdown"
+            >How did you hear about us?
+            <select id="dropdown" name="dropdown" value="dropdown">
+              <option value="" disabled selected>Choose an option</option>
+              <option value="friend">Friend advised</option>
+              <option value="youtube">YouTube Chanal</option>
+              <option value="social">On social networks</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown" value="dropdown"
+            >What format of the New Year's party do you prefer?</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="quest party"
+              type="checkbox"
+              class="inline"
+            />Quest party</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="cocktail party"
+              type="checkbox"
+              class="inline"
+            />Cocktail Party</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="home party"
+              type="checkbox"
+              class="inline"
+            />Home party</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="bbq"
+              type="checkbox"
+              class="inline"
+            />BBQ</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="dance party"
+              type="checkbox"
+              class="inline"
+            />Dance party</label
+          >
+        </fieldset>
+        <fieldset>
+          <label for="requirements"
+            >Your requirements:
+            <textarea
+              id="requirements"
+              name="requirements"
+              rows="5"
+              cols="30"
+              placeholder="I like sit front..."
+            ></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" name="button" value="submit" />
+      </form>
+    </div>
+  </body>
+</html>
